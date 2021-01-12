@@ -1,7 +1,16 @@
 {
     "usuarios": [
         {
-            "nome": "ronaldo"
+            "nome": "foo bar",
+            "cpf": "213.123.123-45",
+            "email": "foo_bar@email.com",
+                 "endereco": {
+          "cep": 13454000,
+          "rua": "rua talvez",
+          "numero": 785,
+          "bairro": "bairro azul",
+          "cidade": "cidade eterna"
             }
+        }
     ]
   }

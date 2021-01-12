@@ -7,7 +7,14 @@ import List from './pages/List'
 import Form from './pages/Form'
 import Error from './pages/Error'
 import Register from './pages/Register'
+
+
+
 const App = () => {
+
+
+
+ 
   return (
     <>
     <NavBar/>
