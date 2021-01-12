@@ -1,16 +1,26 @@
 import React from 'react'
 import {Button} from '../components/Button/Button'
 import {Link} from 'react-router-dom'
-const Login = () => {
+const Register = () => {
 
-    const submitHandler = (e) =>{
-        e.preventDefault();
-    }
+        const submitHandler = (e) =>{
+            e.preventDefault();
+        }
     return (
-        <div>
+<div>
             <form className="form" onSubmit={submitHandler}>
                 <div>
-                    <h1>Sign in</h1>
+                    <h1>Crie Sua Conta</h1>
+                </div>
+                <div>
+                    <label htmlFor="name">Nome</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Insira seu Nome"
+                        required
+                    >
+                    </input>
                 </div>
                 <div>
                     <label htmlFor="email">Email</label>
@@ -33,13 +43,23 @@ const Login = () => {
                     </input>
                 </div>
                 <div>
+                    <label htmlFor="password">Confirmar Senha</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Confirme sua senha"
+                        required
+                    >
+                    </input>
+                </div>
+                <div>
                     <label/>
-                    <Button type="submit">Sign In</Button>
+                    <Button type="submit">Cadastrar</Button>
                 </div>
                 <div>
                     <label/>
                     <div>
-                        Novo Usuário? <Link to="/register"> Crie a sua Conta</Link>
+                       Já tem uma conta? <Link to="/"> Log-in</Link>
                     </div>
                 </div>
             </form>
@@ -47,4 +67,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Register

@@ -21,7 +21,7 @@ const NavBar = () => {
                 </li>
             </ul>
             <Link to="/" className="nav-link ml-auto">
-                        Signin
+                        Sign Up
             </Link>
         </NavWrapper>
     )

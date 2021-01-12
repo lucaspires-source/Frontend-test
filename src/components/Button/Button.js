@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export  const ButtonContainer = styled.button`
+export const Button = styled.button`
     text-transform:capitalize;
     font-size:1.4rem;
     background:var(--button-color);
