@@ -3,7 +3,7 @@ import React from 'react'
 const List = () => {
     return (
         <div>
-            This is the Login Page
+            This is the List  Page
         </div>
     )
 }
