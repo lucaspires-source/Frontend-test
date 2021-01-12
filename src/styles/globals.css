@@ -9,8 +9,10 @@
   --background-color-dark: #eef3f6;
   --background-color-light: white;
   --button-color:#f0c040;
+  --navbar-color:#203040;
   --font-family: "Poppins", sans-serif;
   --box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  height: 100vh;
 }
 html,
 body {
@@ -19,6 +21,7 @@ body {
   font-family: var(--font-family);
   background-color: var(--background-color);
   color: var(--text-color);
+  height: 100vh;
 }
 
 a {

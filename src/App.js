@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from './components/NavBar/NavBar.js'
+import "bootstrap/dist/css/bootstrap.min.css";
 import {Switch,Route} from 'react-router-dom'
 import Login from './pages/Login'
 import List from './pages/List'
