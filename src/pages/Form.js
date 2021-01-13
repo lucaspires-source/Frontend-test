@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../components/Button/Button";
+
 const Form = () => {
   const submitHandler = (e) => {
     e.preventDefault();
@@ -7,16 +8,11 @@ const Form = () => {
 
   const onBlurCep = (e) => {
     const { value } = e.target;
+    const cep = value.replace(/[^0-9]/g,'')
     if (value?.length !== 8) {
       return;
     }
-    fetch(`https://viacep.com.br/ws/${value}json/`, {
-      method: "POST",
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "content-type": "application/json",
-      },
-    })
+    fetch(`/https://viacep.com.br/ws/${value}json/`)
       .then((res) => res.json())
       .then((data) => console.log(data));
   };
