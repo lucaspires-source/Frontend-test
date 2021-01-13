@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {Switch,Route} from 'react-router-dom'
 import Login from './pages/Login'
 import List from './pages/List'
-import Form from './pages/Form'
+import Forms from './pages/Forms'
 import Error from './pages/Error'
 import Register from './pages/Register'
 
@@ -21,7 +21,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Login}/>
         <Route exact path="/list" component={List}/>
-        <Route exact path="/form" component={Form}/>
+        <Route exact path="/form" component={Forms}/>
         <Route exact path="/register" component={Register}/>
         <Route  component={Error}/>
       </Switch>
